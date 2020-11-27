@@ -1,10 +1,13 @@
-
 import http from 'http';
 
-const serverWeb = http.createServer((request, response) => {
-  response.statusCode = 200;
-  response.end(JSON.stringify({name : "Miguel"}))
-})
+const PORT = 8080;
+const OK = 200;
+const fakeBody = { name: 'Miguel' };
+const logSever = () => console.log("Server run");
 
+const webServer = http.createServer((request, response) => {
+  response.statusCode = OK;
+  response.end(JSON.stringify(fakeBody));
+});
 
-serverWeb.listen(8080, () => console.log("Server run"));
+webServer.listen(PORT, () => logSever())
