@@ -4,14 +4,14 @@ This repository it used to more pratice about docker. The idea is to build more 
 
 ## Table Contents
 
-* [Link](#launch-node)
+* [Launch](#launch-node)
 
 
 ### Node app
 
 - See directory ```node```
          
-#### Launch {: id="launch-node" }
+#### Launch
 
 * Execute on that repository, this command
 
